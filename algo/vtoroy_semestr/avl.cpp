@@ -80,7 +80,8 @@ Tree* add(Tree* node, int value) {
     if (value > node->value) {
         node->right = add(node->right, value);
         if (node->right) node->right->mom = node;
-    } else {
+    }
+    else {
         node->left = add(node->left, value);
         if (node->left) node->left->mom = node;
     }
