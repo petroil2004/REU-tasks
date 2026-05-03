@@ -20,7 +20,7 @@ double sin_tailor(double x, double eps) {
         sum += temp;
         n += 1;
     }
-    return sum;
+    return fabs(sum);
 }
 
 int main() {
